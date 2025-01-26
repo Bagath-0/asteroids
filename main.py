@@ -39,7 +39,7 @@ def main():
             for entry in shots:
                 if entry.collisions(rock) == True:
                     entry.kill()
-                    rock.kill()
+                    rock.split()
 
         for entry in drawable:
             entry.draw(screen)
