@@ -19,6 +19,7 @@ def main():
         
         color = (0,0,0)
         screen.fill(color)
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
         dt = clock.tick(FPS)
